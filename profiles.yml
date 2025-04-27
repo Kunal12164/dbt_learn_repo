@@ -1,0 +1,13 @@
+dbt_learn_repo:
+  outputs:
+    dev:
+      account: TDYZFLX-TBB05787
+      database: kunal
+      password: Ilovemyparentes143@
+      role: accountadmin
+      schema: brownz
+      threads: 1
+      type: snowflake
+      user: KRATH12164
+      warehouse: compute_wh
+  target: dev
