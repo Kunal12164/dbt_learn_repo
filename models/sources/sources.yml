@@ -1,0 +1,11 @@
+sources:
+  - name: stg_brownz_layer
+    schema: brownz
+
+    tables:
+      - name: hosts
+        identifier: emp
+
+      - name: host_final
+        identifier: final_emp
+
