@@ -17,4 +17,10 @@ models:
                       'Noida',
                       'USA']
 
+  - name: stg_location_salary
+    columns:
+      - name: total_salary
+        tests:
+          - positive_value
+        description: using macro here
       

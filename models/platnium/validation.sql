@@ -1,5 +1,5 @@
 {{config( 
-    materialized = 'view',schema= 'platnium'
+    materialized = 'view'
 )}}
 
 select * from {{source('stg_brownz_layer','host_incre')}}
