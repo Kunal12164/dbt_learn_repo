@@ -32,11 +32,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_learn_repo:
     staging:
-      +schema: 'BROWNZ'
+      schema: 'BROWNZ'
       +materialized: table
     # Config indicated by + and applies to all files under models/example/
 
     gold:
-      +schema: 'GOLD'
+      schema: 'GOLD'
+      +materialized: view
+
+    platnium:
+      schema: 'PLATNIUM'
       +materialized: view
 

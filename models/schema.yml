@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: validation
+    description: this is my order table applying testing
+    columns:
+      - name: id
+        tests:
+          - not_null
+        description: checking id is not null
+
+      - name: location
+        tests:
+          - accepted_values:
+              values: ['Mumbai',
+                      'Gurgram',
+                      'Noida',
+                      'USA']
+
+      
